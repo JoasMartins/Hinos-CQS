@@ -9,4 +9,8 @@ app.use(express.static(path.join(__dirname, 'audios')));
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
+
+    setInterval(() => {
+        console.log("Mantendo API ligada")
+    }, 1000 * 60 * 5)
 });
